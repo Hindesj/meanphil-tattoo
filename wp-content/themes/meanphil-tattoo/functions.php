@@ -76,3 +76,18 @@ if( function_exists('acf_add_options_page') ) {
         'parent_slug'   => 'meanphil-options',
     ));
 }
+
+// Enqueue Swiper.js in WordPress
+function enqueue_alpine_assets() {
+    wp_enqueue_script('alpine-js', 'https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.3.5/dist/alpine.min.js', [], "2.3.5", true);
+}
+add_action('wp_enqueue_scripts', 'enqueue_alpine_assets');
+
+add_filter('nav_menu_link_attributes', 'add_custom_attribute_to_nav_links', 10, 3);
+function add_custom_attribute_to_nav_links($atts, $item, $args) {
+    // Target a specific menu location
+    if ($args->theme_location === 'primary_navigation') {
+        $atts['@click'] = 'isOpen = false'; // Replace with your desired attribute
+    }
+    return $atts;
+}

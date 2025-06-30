@@ -1,0 +1,31 @@
+.neo-button{
+  @apply bg-black;
+  width: fit-content;
+  border-radius: 12px;
+  margin: 10px 12px ;
+
+  .effect{
+    cursor: pointer;
+    z-index: 2;
+    background-color: #ff47da;
+    width: fit-content;
+    border-radius: 12px;
+    border: 2px solid #1b065e;
+    display: block;
+    transition: .3s ease;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 4px;
+    padding-bottom:4px;
+
+    transform: translate(-10px, -12px);
+
+    &:hover{
+      transform: translate(-10px,-16px)
+    }
+
+    &:active{
+      transform: translate(0px,0px)
+    }
+  }
+}

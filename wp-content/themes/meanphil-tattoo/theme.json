@@ -16,7 +16,34 @@
       "defaultDuotone": false,
       "defaultGradients": false,
       "defaultPalette": false,
-      "duotone": []
+      "duotone": [],
+      "palette": [
+        {
+          "color": "#F88200",
+          "name": "MeanPhil Orange",
+          "slug": "mean-orange"
+        },
+        {
+          "color": "#E13F40",
+          "name": "MeanPhil Red",
+          "slug": "mean-red"
+        },
+        {
+          "color": "#E58DCB",
+          "name": "MeanPhil Pink",
+          "slug": "mean-pink"
+        },
+        {
+          "color": "#602582",
+          "name": "MeanPhil Purple",
+          "slug": "mean-purple"
+        },
+        {
+          "color": "#606A6B",
+          "name": "MeanPhil Gray",
+          "slug": "mean-gray"
+        }
+      ]
     },
     "custom": {
       "spacing": {},

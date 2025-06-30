@@ -1,3 +1,27 @@
 @import "tailwindcss" theme(static);
 @source "../views/";
 @source "../../app/";
+
+@theme {
+  --color-meanOrange: #F88200;
+  --color-meanRed: #E13F40;
+  --color-meanPink: #E58DCB;
+  --color-meanPurple: #602582;
+  --color-meanGray: #606A6B;
+  --breakpoint-3xl: 120rem;
+}
+
+.nav-primary{
+  .nav{
+    li{
+      @apply mr-3;
+
+      a{
+        @apply inline-block py-2 px-4 text-white no-underline;
+      }
+    }
+  }
+}
+
+@import "./global/_buttons.scss";
+@import "./global/_global.scss";
